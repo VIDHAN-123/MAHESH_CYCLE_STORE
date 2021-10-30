@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <title>Welcome to Website</title>
+        <meta charset="utf-8">
+        <link href="/static/style2.css" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+    <script type="text/javascript">
+        function check() {
+    if(document.getElementById('text6').value ===
+            document.getElementById('text7').value) {
+        document.getElementById('message').innerHTML = "Passwords are same ";
+    return true;
+    } else {
+        document.getElementById('message').innerHTML = "Passwords are not same";
+        return false;
+    }
+}
+
+
+
+    </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function(){
+        document.body.addEventListener("touchstart", playVideo);
+        function playVideo() {
+            const video = document.getElementById('myVideo');
+            if(video.playing) {
+            } else {
+                video.play();
+            }
+        }
+    });
+    </script>
+    </head>
+    <div class="bg-overlay"></div>
+    <video class="fullscreen-video" id="myVideo" autoplay="autoplay"  loop>
+        <source src="/static/40.mp4">
+        
+    </video>
+<style>
+        body{
+    background-image:url('/static/2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    }
+    .fullscreen-video {
+    position: fixed;
+    overflow: hidden;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    transform: translateX(-50%) translateY(-50%);
+    z-index: -10;
+}
+
+.bg-overlay {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: #000;
+    opacity: 0.6;
+    z-index: -9;
+}
+    #Register-name{
+    font-size: 65px;
+        font-family:Arabic typesetting;
+        border-bottom-style:ridge;
+        color:blue;
+    
+    }
+    #Register{
+        background-color: green;
+            min-height: 500px;
+            color: white;
+            opacity:0.70;
+            padding: 40px 80px 40px 80px;
+            box-shadow: -10px -10px 9px #33cc33;
+    }
+    .user{
+        font-family: Arabic typesetting;
+            font-size: 24px;
+            color:white;
+    }
+    #iconn2{
+        background-color: #5cb85c;
+        border-color: #4cae4c;
+        color: white;	
+    }
+    #iconn3{
+        background-color: #5cb85c;
+        border-color: #4cae4c;
+        color: white;
+    }
+    #iconn4{
+        background-color: #5cb85c;
+        border-color: #4cae4c;
+        color: white;
+    }
+    #iconn5{
+        background-color: #5cb85c;
+        border-color: #4cae4c;
+        color: white;
+    }
+    #iconn6{
+        background-color: #5cb85c;
+        border-color: #4cae4c;
+        color: white;
+    }
+    #iconn7{
+        background-color: #5cb85c;
+        border-color: #4cae4c;
+        color: white;
+    }
+    #text3{
+    border-radius: 0px;
+        height: 40px;
+    }
+    #text4{
+    border-radius: 0px;
+        height: 40px;
+    }
+    #text5{
+    border-radius: 0px;
+        height: 40px;
+    }
+    #text6{
+    border-radius: 0px;
+        height: 40px;
+    }
+    #text7{
+    border-radius: 0px;
+        height: 40px;
+    }
+    #text8{
+    border-radius: 0px;
+        height: 40px;
+    }
+    
+    .btn{
+        width:50%;
+        border-radius: 0px;
+        height: 40px;
+        font-size: 17px;
+    }
+.wrapper .form .inputfield .custom_select{
+    position: relative;
+    width: 100%;
+    height: 37px;
+  }
+  
+  .wrapper .form .inputfield .custom_select:before{
+    content: "";
+    position: absolute;
+    top: 12px;
+    right: 10px;
+    border: 8px solid;
+    border-color: #d5dbd9 transparent transparent transparent;
+    pointer-events: none;
+  }
+  
+  .wrapper .form .inputfield .custom_select select{
+    -webkit-appearance: none;
+    -moz-appearance:   none;
+    appearance:        none;
+    outline: none;
+    width: 100%;
+    height: 100%;
+    border: 0px;
+    padding: 8px 10px;
+    font-size: 15px;
+    border: 1px solid #d5dbd9;
+    border-radius: 3px;
+  }
+  
+  
+  .wrapper .form .inputfield .input:focus,
+  .wrapper .form .inputfield .textarea:focus,
+  .wrapper .form .inputfield .custom_select select:focus{
+    border: 1px solid #fec107;
+  }
+    </style>
+    <body>
+        <div class="container">
+        <br><br><br>
+        <center><b id= "Register-name">Register Here</b></center>
+        <div class="row">
+        <div class="col-md-6 col-md-offset-3" id="Register">
+        <form action="/register" method="POST" onsubmit= "return check();">
+            <div class="form-group">
+            <label class="user">पहला नाम:</label>
+            <div class="input-group">
+                <span class="input-group-addon" id= "iconn2"><i class="glyphicon glyphicon-user"></i></span>
+                <input type = "text" class="form-control" id="text3"
+                    name = "fname" placeholder="First Name" required>
+            </div>
+            <div class="form-group">
+            <label class="user">
+                दूसरा नाम:</label>
+            <div class="input-group">
+                <span class="input-group-addon" id= "iconn3"><i class="glyphicon glyphicon-user"></i></span>
+                <input type = "text" class="form-control" id="text4"
+                    name = "lname" placeholder="Second Name" required>
+            </div>
+            <div class="form-group">
+            <label class="user">
+                ईमेल:</label>
+            <div class="input-group">
+                <span class="input-group-addon" id= "iconn4"><i class="glyphicon glyphicon-user"></i></span>
+                <input type = "text" class="form-control" id="text5"
+                    name = "email" placeholder="Email" required>
+            </div>
+            <div class="form-group">
+            <label class="user">उपयोगकर्ता नाम:</label>
+            <div class="input-group">
+                <span class="input-group-addon" id= "iconn3"><i class="glyphicon glyphicon-user"></i></span>
+                <input type = "text" class="form-control" id="text8"
+                    name = "username" placeholder="Enter Username" required>
+                </div>
+            <div class="form-group">
+            <label class="user">
+                पासवर्ड:</label>
+            <div class="input-group">
+                <span class="input-group-addon" id= "iconn5"><i class="glyphicon glyphicon-lock"></i></span>
+                <input type = "password" class="form-control" id="text6"
+                onkeyup="check()"   name = "password" placeholder="Enter Password" required>
+            </div>
+            <div class="form-group">
+            <label class="user">पुन: दर्ज करें
+                पासवर्ड:</label>
+            <div class="input-group">
+                <span class="input-group-addon" id= "iconn6"><i class="glyphicon glyphicon-lock"></i></span>
+                <input type = "password" class="form-control" id="text7"
+                onkeyup="check()" name = "password2" placeholder="Re-Enter Password" checked>
+                <span id='message'></span>
+
+            </div>
+            <br><br><br>
+            <div class="form-group">
+                <input type="Submit" class="btn btn-success" value="Register"required>
+            </div>
+            <br>
+            <a href="/login2" style="color: white; font-size: 15px;">लॉग इन करने के लिए यहां क्लिक करें</a>     
+        </form>
+    </body>
+</html>

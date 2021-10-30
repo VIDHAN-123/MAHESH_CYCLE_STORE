@@ -1,0 +1,162 @@
+<html>
+    <head>
+        <title>Welcome to Website </title>
+        <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    </head>
+    <script>
+        document.addEventListener("DOMContentLoaded", function(){
+        document.body.addEventListener("touchstart", playVideo);
+        function playVideo() {
+            const video = document.getElementById('myVideo');
+            if(video.playing) {
+            } else {
+                video.play();
+            }
+        }
+    });
+    </script>
+    
+    <div class="bg-overlay"></div>
+    <video class="fullscreen-video" id="myVideo" autoplay="autoplay"  loop>
+        <source src="/static/90.mp4">
+        
+    </video>
+    <br>
+    <a href="/login" style="color: white; font-size: 40px;">ENGLISH</a>     
+
+
+    </form>
+    
+    <br>
+    <a href="/login2" style="color: white; font-size: 40px;">HINDI</a>     
+</form>
+    <style>
+        *{
+   margin: 0;
+   padding: 0;
+ }
+ body{
+    background-image:url('/static/2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    }
+ 
+.fullscreen-video {
+    position: fixed;
+    overflow: hidden;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    transform: translateX(-50%) translateY(-50%);
+    z-index: -10;
+}
+
+.bg-overlay {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: #000;
+    opacity: 0.6;
+    z-index: -9;
+}
+.form-box{
+    width: 500px;
+    background:red
+    margin: 12% auto;
+    padding: 50px 0;
+    color: #fff;
+    box-shadow: 0 0 20px 2px rgba (0,0,0,0.5);
+}
+
+h1{
+    text-align: center;
+    margin-bottom: 40px;
+}
+.input-box{
+    margin: 31px auto;
+    width: 80%;
+    border-bottom: 1px solid #fff;
+}
+.input-box input{
+    width: 90%;
+    border: none;
+    outline: none;
+    background: transparent;
+    color: #fff;
+}
+::placeholder{
+    color: #ccc;
+}
+.fa{
+    margin-right: 10px;
+}
+.eye{
+    position: absolute;
+}
+#hide1{
+    display: none;
+}
+.btn{
+    margin: 40px auto;
+    width: 80%;
+    display: block;
+    outline: none;
+    padding: 10px 0;
+    border: 1px solid #fff;
+    cursor: pointer;
+    background: transparent;
+    color: #fff;
+    font-size: 16px;
+    }
+    </style>
+    
+    <body>
+        <form action="/login" method="POST">
+        <div class="form-box">
+            <h1>Login Here</h1>
+            <div class="input-box">
+                <i class="fa fa-user"></i>
+                <input type="text" name="username" placeholder="Enter Username" required>
+            </div>
+            <div class="input-box">
+                <i class="fa fa-key"></i>
+                <input type="password" name="password" placeholder="Enter Password"  id="myInput" required>
+                <span class="eye" onclick="myFunction()">
+                <i id="hide1" class="fa fa-eye"></i>
+                <i id="hide2" class="fa fa-eye-slash"></i>
+            </span>
+            </div>
+            <div class="form-group">
+                <input type="submit" class="btn btn-success" value="Login">
+            </div>
+            <a href="/register" style="color: white; font-size: 15px;">Do not have an account? Click here to register</a>
+            <br>
+            <a href="/reset" style="color: white; font-size: 15px;">Forgot your password? Click here to reset</a>
+        </form>
+        </div>
+<script>
+   function myFunction(){
+       var x = document.getElementById("myInput");
+       var y = document.getElementById("hide1");
+       var z = document.getElementById("hide2");
+   
+       if (x.type === 'password'){
+           x.type = "text";
+           y.style.display = "block";
+           z.style.display = "none";
+       }
+       else{
+           x.type = "password";
+           y.style.display = "none";
+           z.style.display = "block"; 
+       }
+   }
+</script>
+
+    </body>
+</html>

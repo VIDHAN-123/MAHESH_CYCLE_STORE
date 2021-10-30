@@ -1,0 +1,422 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Mahesh Cycle Store</title>
+<link href="/static/css/mensgallery.css" rel="stylesheet" type="text/css" />
+<link href="/static/css/topfooter.css" rel="stylesheet" type="text/css" />
+
+    
+    
+
+
+</head>
+<body>
+
+
+<div id="wrapper">
+
+<header class="float_l top">
+    <div id="wrapper">
+
+        <header class="float_l top">
+            <hr>
+                
+                    
+             
+             <nav class="float_l">
+                   <div class="logo">
+                   <a href="#"><img src="/static/images/logo.png" class="float_l" /></a></div>
+                   <ul class="menu float_l">
+                    <a href="/shop" style="color: black; font-size: 20px;">Home</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="/cycle" style="color: black; font-size: 20px;">Cycle</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="/toy" style="color: black; font-size: 20px;">Toy</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="/electric" style="color: black; font-size: 20px;">Electric</a>
+                    <form align="center" action="/logout" method="GET">
+                        <input id="logoutbutton" type="submit" value="LOGOUT">
+                    </form>
+                    
+                </ul>
+             </nav>
+                
+        </header>
+
+<!--------------Slider Section Start------------------->
+<section id="slider" class="float_l">
+
+    
+    <script type="/static/text/javascript" src="js/jquery-1.9.1.min.js"></script>
+    <script type="/static/text/javascript" src="js/jssor.slider.mini.js"></script>
+    <!-- use jssor.slider.debug.js instead for release -->
+    <script>
+        jQuery(document).ready(function ($) {
+            
+            var jssor_1_options = {
+              $AutoPlay: true,
+              $SlideDuration: 800,
+              $SlideEasing: $Jease$.$OutQuint,
+              $ArrowNavigatorOptions: {
+                $Class: $JssorArrowNavigator$
+              },
+              $BulletNavigatorOptions: {
+                $Class: $JssorBulletNavigator$
+              }
+            };
+            
+            var jssor_1_slider = new $JssorSlider$("jssor_1", jssor_1_options);
+            
+            //responsive code begin
+            //you can remove responsive code if you don't want the slider scales while window resizes
+            function ScaleSlider() {
+                var refSize = jssor_1_slider.$Elmt.parentNode.clientWidth;
+                if (refSize) {
+                    refSize = Math.min(refSize, 1930);
+                    jssor_1_slider.$ScaleWidth(refSize);
+                }
+                else {
+                    window.setTimeout(ScaleSlider, 30);
+                }
+            }
+            ScaleSlider();
+            $(window).bind("load", ScaleSlider);
+            $(window).bind("resize", ScaleSlider);
+            $(window).bind("orientationchange", ScaleSlider);
+            //responsive code end
+        });
+    </script>
+
+    <style>
+        
+        /* jssor slider bullet navigator skin 05 css */
+        /*
+        .jssorb05 div           (normal)
+        .jssorb05 div:hover     (normal mouseover)
+        .jssorb05 .av           (active)
+        .jssorb05 .av:hover     (active mouseover)
+        .jssorb05 .dn           (mousedown)
+        */
+        .jssorb05 {
+            position: absolute;
+        }
+        .jssorb05 div, .jssorb05 div:hover, .jssorb05 .av {
+            position: absolute;
+            /* size of bullet elment */
+            width: 16px;
+            height: 16px;
+            background: url('images/slider/b05.png') no-repeat;
+            overflow: hidden;
+            cursor: pointer;
+        }
+        .jssorb05 div { background-position: -7px -7px; }
+        .jssorb05 div:hover, .jssorb05 .av:hover { background-position: -37px -7px; }
+        .jssorb05 .av { background-position: -67px -7px; }
+        .jssorb05 .dn, .jssorb05 .dn:hover { background-position: -97px -7px; }
+
+        /* jssor slider arrow navigator skin 22 css */
+        /*
+        .jssora22l                  (normal)
+        .jssora22r                  (normal)
+        .jssora22l:hover            (normal mouseover)
+        .jssora22r:hover            (normal mouseover)
+        .jssora22l.jssora22ldn      (mousedown)
+        .jssora22r.jssora22rdn      (mousedown)
+        */
+        .jssora22l, .jssora22r {
+            display: block;
+            position: absolute;
+            /* size of arrow element */
+            width: 40px;
+            height: 58px;
+            cursor: pointer;
+            background: url('images/slider/a22.png') center center no-repeat;
+            overflow: hidden;
+        }
+        .jssora22l { background-position: -10px -31px; }
+        .jssora22r { background-position: -70px -31px; }
+        .jssora22l:hover { background-position: -130px -31px; }
+        .jssora22r:hover { background-position: -190px -31px; }
+        .jssora22l.jssora22ldn { background-position: -250px -31px; }
+        .jssora22r.jssora22rdn { background-position: -310px -31px; }
+    </style>
+
+
+
+
+
+
+
+<!---------MEN'S GALLERY START------------->
+<heading>
+    <h1 class="float_l"><img src="/static/images/dot.png" class="dot"/><h1>For Knowing the prices of product can contact the no 7004576752</h1><span style="background-color:#fcc60d;padding:5px 5px;"></span> <img src="/static/images/dot.png" class="dot"/></h1>
+    </heading>
+    
+
+<div class="mens-gallery float_l">
+	<div class="product-title float_l" >
+    	<aside class="left-side float_l">
+    		<h1><big>Toys</big></h1>
+        </aside>
+        <aside class="right-side float_r">
+    		<div class="shortby float_l">
+            </div>
+            <div class="viewby float_r">
+            	<div class="view float_l">View : </div><img src="/static/images/view-icon.png" class="float_l"/>
+            </div>
+            
+        </aside>
+    </div>
+	
+    <div class="deshed-line">--------------------------------------------------------------------------------------------------------------------------------------------------------------------</div>
+	
+<style>/* Image Zoom Effect */
+
+.image-card img {
+    -webkit-transition: all 1s ease; /* Safari and Chrome */
+    -moz-transition: all 1s ease; /* Firefox */
+    -o-transition: all 1s ease; /* IE 9 */
+    -ms-transition: all 1s ease; /* Opera */
+    transition: all 1s ease;
+    max-width: 100%;
+}
+.image-card:hover img {
+    -webkit-transform:scale(1.25); /* Safari and Chrome */
+    -moz-transform:scale(1.25); /* Firefox */
+    -ms-transform:scale(1.25); /* IE 9 */
+    -o-transform:scale(1.25); /* Opera */
+     transform:scale(1.25);
+}
+
+.image-card {
+  overflow:hidden;
+} 
+    </style>
+    
+    
+    
+    
+    
+<div class="product float_l"><!--------Product T-Shirt---------->
+    		
+        <div class="mens-tshirt float_l"><div class="image-card"><img src="/static/toy/3 (3).jpeg" width="240" height="280"/></div>
+        	<div class="lable"><div class="lable-size"><br>
+        		<div style="font-weight:bold">
+                
+                </div>
+        		</div>
+        </div>
+        </div>
+        
+        <div class="mens-tshirt float_l"><div class="image-card"><img src="/static/toy/2 (1).jpeg" width="240" height="280" /></div>
+        <div class="lable"><div class="lable-size"><br>
+        		</div>
+        </div>
+        </div>
+        
+        <div class="mens-tshirt float_l"><div class="image-card"><img src="/static/toy/2 (2).jpeg" width="240" height="280" /></div>
+        <div class="lable"><div class="lable-size"><br>
+        		<div style="font-weight:bold">
+    
+                </div>
+        		</div>
+        </div>
+        </div>
+        
+        <div class="mens-tshirt float_l"><div class="image-card"><img src="/static/toy/3.jpeg" width="240" height="280" /></div>
+        <div class="lable"><div class="lable-size"><br>
+        		<div style="font-weight:bold">
+                    </div>
+                
+                </div>
+        </div>
+        </div>
+        
+        
+        
+        <div class="mens-tshirt float_l"><div class="image-card"><img src="/static/toy/3 .jpg" width="240" height="280" /></div>
+        <div class="lable"><div class="lable-size"><br>
+        		<div style="font-weight:bold">
+              
+                </div>
+        		</div>
+        </div>
+        </div>
+        
+        <div class="mens-tshirt float_l"><div class="image-card"><img src="/static/toy/2 (7).jpeg" width="240" height="280" /></div>
+       <div class="lable"><div class="lable-size"><br>
+        		<div style="font-weight:bold">
+                
+                </div>
+        		</div>
+        </div>
+        </div>
+        
+        <div class="mens-tshirt float_l"><div class="image-card"><img src="/static/toy/2 (3).jpeg" width="240" height="280" /></div>
+       <div class="lable"><div class="lable-size"><br>
+        		<div style="font-weight:bold">
+                
+                </div>
+        		</div>
+        </div>
+        </div>
+        
+        <div class="mens-tshirt float_l"><div class="image-card"><img src="/static/toy/2 (4).jpeg" width="240" height="280" /></div>
+        <div class="lable"><div class="lable-size"><br>
+        		<div style="font-weight:bold">
+                </div>
+            </div>
+        </div>
+        </div>
+        
+        
+        
+        <div class="mens-tshirt float_l"><div class="image-card"><img src="/static/toy/2 (5).jpeg" width="240" height="280" /></div>
+        <div class="lable"><div class="lable-size"><br>
+        		<div style="font-weight:bold">
+               
+                </div>
+        		</div>
+        </div>
+        </div>
+        
+        <div class="mens-tshirt float_l"><div class="image-card"><img src="/static/toy/2 (6).jpeg" width="240" height="280" /></div>
+        <div class="lable"><div class="lable-size"><br>
+        		<div style="font-weight:bold">
+                
+                </div>
+        		</div>
+        </div>
+        </div>
+        
+        <div class="mens-tshirt float_l"><div class="image-card"><img src="/static/toy/3 (2).jpeg" width="240" height="280" /></div>
+        <div class="lable"><div class="lable-size"><br>
+        		<div style="font-weight:bold">
+               
+                </div>
+        		</div>
+        </div>
+        </div>
+        
+        <div class="mens-tshirt float_l"><div class="image-card"><img src="/static/toy/1 (1).jpeg" width="240" height="280" /></div>
+        <div class="lable"><div class="lable-size"><br>
+        		<div style="font-weight:bold">
+           
+                </div>
+       			</div>
+        </div>
+        </div>
+      
+<div class="product-title float_l">
+    	<aside class="left-side float_l">
+    		<h1><big>Honda</big></h1>
+        </aside>
+</div>
+<div class="product float_l"><!--------Product jeans---------->
+
+        <div class="mens-tshirt float_l"><div class="image-card"><img src="images/jeans1.jpg" width="240" height="280" /></div>
+        <div class="lable"><div class="lable-size">Sport Wear Blue Jeans <br>
+        		<div style="font-weight:bold">
+                	<del style="font-weight:normal">Rs. 999</del>&nbsp;&nbsp;Rs. 750<span class="off">- 30%</span>
+                </div>
+        		</div><div class="buynow"><a href="https://docs.google.com/forms/d/e/1FAIpQLSdukJ8PjgDoCrM4LWmYbq547HfbQK7RIpktBBCsLkisGQ2G8A/viewform?usp=pp_url">Buy Now</a></div>
+        </div>
+		</div>
+        
+        <div class="mens-tshirt float_l"><div class="image-card"><img src="images/jeans2.jpg" width="240" height="280" /></div>
+        <div class="lable"><div class="lable-size">Sport Wear Blue Jeans<br>
+        		<div style="font-weight:bold">
+                <del style="font-weight:normal">Rs. 999</del>&nbsp;&nbsp;Rs. 750<span class="off">- 40%</span>
+                </div>
+        		</div><div class="buynow"><a href="https://docs.google.com/forms/d/e/1FAIpQLSdukJ8PjgDoCrM4LWmYbq547HfbQK7RIpktBBCsLkisGQ2G8A/viewform?usp=pp_url">Buy Now</a></div>
+        </div>
+        </div>
+        
+        <div class="mens-tshirt float_l"><div class="image-card"><img src="images/jeans3.jpg" width="240" height="280" /></div>
+        <div class="lable"><div class="lable-size">Sport Wear Blue Jeans<br>
+        		<div style="font-weight:bold">
+                <del style="font-weight:normal">Rs. 999</del>&nbsp;&nbsp;Rs. 750<span class="off">- 40%</span>
+                </div>
+        		</div><div class="buynow"><a href="https://docs.google.com/forms/d/e/1FAIpQLSdukJ8PjgDoCrM4LWmYbq547HfbQK7RIpktBBCsLkisGQ2G8A/viewform?usp=pp_url">Buy Now</a></div>
+        </div>
+        </div>
+        
+        <div class="mens-tshirt float_l"><div class="image-card"><img src="images/jeans4.jpg" width="240" height="280" /></div>
+        <div class="lable"><div class="lable-size">Sport Wear Blue Jeans<br>
+        		<div style="font-weight:bold">
+                <del style="font-weight:normal">Rs. 999</del>&nbsp;&nbsp;Rs. 750<span class="off">- 40%</span>
+                </div>
+        		</div><div class="buynow"><a href="https://docs.google.com/forms/d/e/1FAIpQLSdukJ8PjgDoCrM4LWmYbq547HfbQK7RIpktBBCsLkisGQ2G8A/viewform?usp=pp_url">Buy Now</a></div>
+        </div>
+        </div>
+        
+        <div class="mens-tshirt float_l"><div class="image-card"><img src="images/jeans5.jpg" width="240" height="280" /></div>
+        <div class="lable"><div class="lable-size">Sport Wear Blue Jeans<br>
+        		<div style="font-weight:bold">
+                <del style="font-weight:normal">Rs. 999</del>&nbsp;&nbsp;Rs. 750<span class="off">- 40%</span>
+                </div>
+        		</div><div class="buynow"><a href="https://docs.google.com/forms/d/e/1FAIpQLSdukJ8PjgDoCrM4LWmYbq547HfbQK7RIpktBBCsLkisGQ2G8A/viewform?usp=pp_url">Buy Now</a></div>
+        </div>
+        </div>
+        
+        <div class="mens-tshirt float_l"><div class="image-card"><img src="images/jeans6.jpg" width="240" height="280" /></div>
+        <div class="lable"><div class="lable-size">Sport Wear Blue Jeans<br>
+        		<div style="font-weight:bold">
+                <del style="font-weight:normal">Rs. 999</del>&nbsp;&nbsp;Rs. 750<span class="off">- 40%</span>
+                </div>
+        		</div><div class="buynow"><a href="https://docs.google.com/forms/d/e/1FAIpQLSdukJ8PjgDoCrM4LWmYbq547HfbQK7RIpktBBCsLkisGQ2G8A/viewform?usp=pp_url">Buy Now</a></div>
+        </div>
+        </div>
+        
+       <div class="mens-tshirt float_l"><div class="image-card"><img src="images/jeans1.jpg" width="240" height="280" /></div>
+       <div class="lable"><div class="lable-size">Sport Wear Blue Jeans<br>
+        		<div style="font-weight:bold">
+                <del style="font-weight:normal">Rs. 999</del>&nbsp;&nbsp;Rs. 750<span class="off">- 40%</span>
+                </div>
+        		</div><div class="buynow"><a href="https://docs.google.com/forms/d/e/1FAIpQLSdukJ8PjgDoCrM4LWmYbq547HfbQK7RIpktBBCsLkisGQ2G8A/viewform?usp=pp_url">Buy Now</a></div>	
+        </div>
+        </div>
+        
+        <div class="mens-tshirt float_l"><div class="image-card"><img src="images/jeans2.jpg" width="240" height="280" /></div>
+        <div class="lable"><div class="lable-size">Sport Wear Blue Jeans<br>
+        		<div style="font-weight:bold">
+                <del style="font-weight:normal">Rs. 999</del>&nbsp;&nbsp;Rs. 750<span class="off">- 40%</span>
+                </div>
+       			</div><div class="buynow"><a href="https://docs.google.com/forms/d/e/1FAIpQLSdukJ8PjgDoCrM4LWmYbq547HfbQK7RIpktBBCsLkisGQ2G8A/viewform?usp=pp_url">Buy Now</a></div>
+        </div>
+        </div>
+        
+        <div class="mens-tshirt float_l"><div class="image-card"><img src="images/jeans2.jpg" width="240" height="280" /></div>
+        <div class="lable"><div class="lable-size">Sport Wear Blue Jeans<br>
+        		<div style="font-weight:bold">
+                <del style="font-weight:normal">Rs. 999</del>&nbsp;&nbsp;Rs. 750<span class="off">- 40%</span>
+                </div>
+        		</div><div class="buynow"><a href="https://docs.google.com/forms/d/e/1FAIpQLSdukJ8PjgDoCrM4LWmYbq547HfbQK7RIpktBBCsLkisGQ2G8A/viewform?usp=pp_url">Buy Now</a></div>
+        </div>
+        </div>
+        
+        <div class="mens-tshirt float_l"><div class="image-card"><img src="images/jeans3.jpg" width="240" height="280" /></div>
+        <div class="lable"><div class="lable-size">Sport Wear Blue Jeans<br>
+        		<div style="font-weight:bold">
+                <del style="font-weight:normal">Rs. 999</del>&nbsp;&nbsp;Rs. 750<span class="off">- 40%</span>
+                </div>
+        		</div><div class="buynow"><a href="https://docs.google.com/forms/d/e/1FAIpQLSdukJ8PjgDoCrM4LWmYbq547HfbQK7RIpktBBCsLkisGQ2G8A/viewform?usp=pp_url">Buy Now</a></div>
+        </div>
+        </div>
+        
+        <div class="mens-tshirt float_l"><div class="image-card"><img src="images/jeans4.jpg" width="240" height="280" /></div>
+        <div class="lable"><div class="lable-size">Sport Wear Blue Jeans<br>
+        		<div style="font-weight:bold">
+                <del style="font-weight:normal">Rs. 999</del>&nbsp;&nbsp;Rs. 750<span class="off">- 40%</span>
+                </div>
+        		</div><div class="buynow"><a href="https://docs.google.com/forms/d/e/1FAIpQLSdukJ8PjgDoCrM4LWmYbq547HfbQK7RIpktBBCsLkisGQ2G8A/viewform?usp=pp_url">Buy Now</a></div>
+        </div>
+        </div>
+        
+        <div class="mens-tshirt float_l"><div class="image-card"><img src="images/jeans1.jpg" width="240" height="280" /></div>
+        <div class="lable"><div class="lable-size">Sport Wear Blue Jeans<br>
+        		<div style="font-weight:bold">
+                <del style="font-weight:normal">Rs. 999</del>&nbsp;&nbsp;Rs. 750<span class="off">- 40%</span>
+                </div>
+        		</div><div class="buynow"><a href="https://docs.google.com/forms/d/e/1FAIpQLSdukJ8PjgDoCrM4LWmYbq547HfbQK7RIpktBBCsLkisGQ2G8A/viewform?usp=pp_url">Buy Now</a></div>
+        </div>
+        </div>
+    </div>
+    
+</body>
+</html>

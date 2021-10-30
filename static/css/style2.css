@@ -1,0 +1,122 @@
+body{
+    background-image:url('http://localhost/static/2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    }
+    #Register-name{
+    font-size: 65px;
+        font-family:Arabic typesetting;
+        border-bottom-style:ridge;
+        color:blue;
+    
+    }
+    #Register{
+        background-color: green;
+            min-height: 500px;
+            color: white;
+            opacity:0.70;
+            padding: 40px 80px 40px 80px;
+            box-shadow: -10px -10px 9px #33cc33;
+    }
+    .user{
+        font-family: Arabic typesetting;
+            font-size: 24px;
+            color:white;
+    }
+    #iconn2{
+        background-color: #5cb85c;
+        border-color: #4cae4c;
+        color: white;	
+    }
+    #iconn3{
+        background-color: #5cb85c;
+        border-color: #4cae4c;
+        color: white;
+    }
+    #iconn4{
+        background-color: #5cb85c;
+        border-color: #4cae4c;
+        color: white;
+    }
+    #iconn5{
+        background-color: #5cb85c;
+        border-color: #4cae4c;
+        color: white;
+    }
+    #iconn6{
+        background-color: #5cb85c;
+        border-color: #4cae4c;
+        color: white;
+    }
+    #iconn7{
+        background-color: #5cb85c;
+        border-color: #4cae4c;
+        color: white;
+    }
+    #text3{
+    border-radius: 0px;
+        height: 40px;
+    }
+    #text4{
+    border-radius: 0px;
+        height: 40px;
+    }
+    #text5{
+    border-radius: 0px;
+        height: 40px;
+    }
+    #text6{
+    border-radius: 0px;
+        height: 40px;
+    }
+    #text7{
+    border-radius: 0px;
+        height: 40px;
+    }
+    #text8{
+    border-radius: 0px;
+        height: 40px;
+    }
+    
+    .btn{
+        width:50%;
+        border-radius: 0px;
+        height: 40px;
+        font-size: 17px;
+    }
+.wrapper .form .inputfield .custom_select{
+    position: relative;
+    width: 100%;
+    height: 37px;
+  }
+  
+  .wrapper .form .inputfield .custom_select:before{
+    content: "";
+    position: absolute;
+    top: 12px;
+    right: 10px;
+    border: 8px solid;
+    border-color: #d5dbd9 transparent transparent transparent;
+    pointer-events: none;
+  }
+  
+  .wrapper .form .inputfield .custom_select select{
+    -webkit-appearance: none;
+    -moz-appearance:   none;
+    appearance:        none;
+    outline: none;
+    width: 100%;
+    height: 100%;
+    border: 0px;
+    padding: 8px 10px;
+    font-size: 15px;
+    border: 1px solid #d5dbd9;
+    border-radius: 3px;
+  }
+  
+  
+  .wrapper .form .inputfield .input:focus,
+  .wrapper .form .inputfield .textarea:focus,
+  .wrapper .form .inputfield .custom_select select:focus{
+    border: 1px solid #fec107;
+  }

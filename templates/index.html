@@ -1,0 +1,96 @@
+<html>
+    <head>
+        <title>Welcome to Website</title>
+        <script>
+            document.addEventListener("DOMContentLoaded", function(){
+            document.body.addEventListener("touchstart", playVideo);
+            function playVideo() {
+                const video = document.getElementById('myVideo');
+                if(video.playing) {
+                } else {
+                    video.play();
+                }
+            }
+        });
+        </script>
+
+<body>
+    
+
+    
+
+<div class="bg-overlay"></div>
+<video class="fullscreen-video" id="myVideo" autoplay="autoplay"  loop>
+    <source src="/static/1.mp4">
+    
+</video>
+
+<style>
+    
+            
+
+           
+
+    body {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+img { width: 600px; }
+
+.fullscreen-video {
+    position: fixed;
+    overflow: hidden;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    transform: translateX(-50%) translateY(-50%);
+    z-index: -10;
+}
+
+.bg-overlay {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: #000;
+    opacity: 0.6;
+    z-index: -9;
+}
+
+
+        
+            
+    
+        #loginbutton { 
+        border: 1px solid black;
+        padding: 3px;
+        background-color: cyan;
+        font-family: Courier;
+        font-size: 20px;
+        }
+        #loginbutton:hover { 
+        border: 1px solid black;
+        padding: 3px;
+        background-color:blue;
+        font-family: Courier;
+        font-size: 20px;
+        color: white
+        }
+        </style>
+        </head>
+        <body>
+            <br>
+            <h1 align="left-side"><p style="color:white">Hi,Welcome to my Mahesh Cycle Store <br>Click up on login button </br></p></h1>
+            <form align="right-side" action="/login" method="GET">
+                <input id="loginbutton" type="submit" value="LOGIN">
+            </form>
+    </body>
+</html>
